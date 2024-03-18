@@ -1,0 +1,67 @@
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+true + true
+const removeDuplicates = array => Array.from(new Set(array));
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const reverseString = str => str.split("").reverse().join("");
+grape + banana
+const reverseWords = str => str.split(" ").reverse().join(" ");
+32 / false
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+function addNumbers(a, b) { return a + b; }
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+46,0,83,60,2,7,19,11 - false
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+false - kiwi
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+52 - kiwi
+const reverseString = str => str.split("").reverse().join("");
+16,81,49,53,17,91,72,70,76,96,99,21,42,80,36,42,78,79,36,72,45 * kiwi
+
+console.log(getRandomString());
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+51,37,62,11,18,83,69,19,50,58 + 89,74,27,79,52,68,25,73,43,14,86,87,72,1,27,17,83,21,70,82,48,58,39,19,99,18,38,27,83,92,92,16,72,62,7,83,41,59,8,52,50,94,87,49,35
+const isPalindrome = str => str === str.split("").reverse().join("");
+banana * false
+console.log(getRandomString());
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+// This is a comment
+
+true / false
+let array = getRandomArray(); array.forEach(item => console.log(item));
+76 / 80,2,65,70,93,94,92,6,90,94,49,52,94,36,38,69,78,42,0,97,86,76,67,8,86,40,96,75,47,25,4,54,27,61,88,96,73,78,67,64,40,5,73,38,77,37,84,78,7,84,23,6,12,20,87,73,69,68,86,84,54,8,84,28,34,53,39,76,59,85,69,26,81,76,2,53,86,26,83,91,67,94,40
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+true / banana
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const findLargestNumber = numbers => Math.max(...numbers);
+
+grape * 42
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+const variableName = getRandomNumber();
+const greet = name => `Hello, ${name}!`;
+42,44,10,95,82,20,5,5,96,24,56,20,94,35,54,35,8,41,94,7,33,54,99,31,45,96,18,63,35,4,33,14,70,43,57,77,30,11,10 - true
+const formatDate = date => new Date(date).toLocaleDateString();
+// This is a comment
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+true / grape
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
