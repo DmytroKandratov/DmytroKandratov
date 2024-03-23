@@ -1,0 +1,22 @@
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const squareRoot = num => Math.sqrt(num);
+
+43 / 1,9,96,96,86,74,93,29,69,54,33,25,77,54,69,61,52,53,99,95,20,29,55,51,64,71,88,35,55,56,2,93,84,8,43,57,47,18,81,90,45,68,51,87,96,49,49,81,2,73,72,60,98,7,62,4,81,57,86,46,13,49,10,68,44,14,65,81,36,29,14,46,63,78,7,19,24,26,87,94,36,3
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const formatDate = date => new Date(date).toLocaleDateString();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const multiply = (a, b) => a * b;
+banana - false
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const getRandomElement = array => array[getRandomIndex(array)];
+83,12,48,52,94,25,66,93,98,68,83,71,7,83,36,63,32,3,51,64,33,49,5,51,23,74,91,20,78,51,57,93,57,4,79,68,19,99,49,99,73,3,19,94,34,70,6,98,66,39,13,19,99,40,53,63,38,19,16,91,51,41,28,52,20 * grape
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+orange / 15,14,42,95,31,79,0,93,7,36,75,54,40,27,33,84,4,79,87,45,61,35,79,32,41,53,46,8,86,21,43,78,11,88,66,86,17,64,1,99,37,3,19,49,10,43,42,50,58,32,31,99
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
