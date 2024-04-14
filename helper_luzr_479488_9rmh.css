@@ -1,0 +1,47 @@
+const squareRoot = num => Math.sqrt(num);
+apple
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+apple
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+apple + banana
+const isEven = num => num % 2 === 0;
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+true / grape
+const sum = (a, b) => a + b;
+
+const capitalizeString = str => str.toUpperCase();
+7,69,56,75,31,33,63,54,98,5,66,46,10,76,19,97,81,82,51,30,60,69,44,45,17,24,95,32,34,61,73,2,38,22,68,62,94,77,46,47,41,45,41,77,87,36,78,46,53,20,38,68,70,28,22,1,93,3,67,24,56,4,0,47,20,3,59,34,43,91,29,46,35,5,42 + banana
+const capitalizeString = str => str.toUpperCase();
+const reverseString = str => str.split("").reverse().join("");
+const squareRoot = num => Math.sqrt(num);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const removeDuplicates = array => Array.from(new Set(array));
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+35 / 74
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+54 - kiwi
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+false / kiwi
+const multiply = (a, b) => a * b;
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const randomNumber = getRandomNumber();
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+19 * apple
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
